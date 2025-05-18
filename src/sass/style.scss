@@ -152,3 +152,36 @@ nav {
     transform: translateY(8px);
   }
 }
+@media (max-width: 768px) {
+  .header {
+    .title-header {
+      align-items: center;
+      text-align: center;
+
+      .title-up,
+      .title-down {
+        font-size: 36px;
+        letter-spacing: 4px;
+      }
+
+      .title-down {
+        margin-left: 0;
+      }
+
+      &::after {
+        width: 100px;
+        bottom: -15px;
+      }
+    }
+
+    div:last-child {
+      p {
+        font-size: 18px;
+      }
+
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+}
