@@ -336,4 +336,88 @@ nav {
       }
     }
   }
+  .section-products {
+    padding: 40px 15px;
+
+    .container {
+      max-width: 100%;
+
+      h2 {
+        font-size: 32px;
+        letter-spacing: 5px;
+
+        &::after {
+          width: 200px;
+          height: 3px;
+          margin: 8px auto 0;
+        }
+      }
+
+      .card-products {
+        gap: 40px;
+
+        .card-single-product {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+
+          .card-section {
+            order: 0 !important;
+            padding: 10px 0;
+            width: 100%;
+          }
+
+          .card-right-one,
+          .card-left-two,
+          .card-right-three {
+            min-height: 200px;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+          }
+          .card-left-two,
+          .card-right-one,
+          .card-right-three {
+            order: 1 !important;
+            width: 100%;
+            min-height: 250px;
+            background-position: center;
+            background-size: cover;
+          }
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+          }
+
+          .description {
+            font-size: 14px;
+            margin-left: 20px;
+          }
+
+          .line {
+            width: 100px;
+            height: 2px;
+          }
+
+          .taste-caffe {
+            font-size: 12px;
+            gap: 15px;
+
+            div {
+              max-width: 150px;
+
+              p:first-child {
+                font-size: 12px;
+              }
+
+              p:last-child {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
