@@ -143,6 +143,158 @@ nav {
     }
   }
 }
+
+.section-products {
+  padding: 80px 20px;
+  background-color: $color-light;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-family: $font-source;
+      font-size: 48px;
+      color: $color-main;
+      position: relative;
+      margin-bottom: 40px;
+      letter-spacing: 10px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 400px;
+        height: 4px;
+        background-color: $color-main;
+        margin: 12px auto 0;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.card-products {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  .card-single-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    .card-section {
+      flex: 1;
+      color: $color-dark;
+      font-family: $font-source;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card-left-one,
+    .card-left-three {
+      order: 1;
+    }
+
+    .card-right-one,
+    .card-right-three {
+      order: 2;
+      background-size: cover;
+      background-position: center;
+      min-height: 310px;
+    }
+
+    .card-left-two {
+      order: 1;
+      background-size: cover;
+      background-position: center;
+
+      min-height: 310px;
+    }
+
+    .card-right-two {
+      order: 2;
+    }
+
+    h3 {
+      text-align: left;
+      font-weight: $font-weight-black;
+      letter-spacing: 3px;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .desc {
+      display: flex;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      color: rgb(82, 82, 82);
+    }
+
+    .line {
+      width: 150px;
+      height: 2px;
+      background-color: $color-main;
+    }
+  }
+}
+
+.taste-caffe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  align-items: flex-start;
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 200px;
+
+    p:first-child {
+      color: $color-dark;
+      opacity: 0.7;
+      font-family: $font-source;
+      font-weight: $font-weight-black;
+      margin: 0;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    p:last-child {
+      color: $color-main;
+      font-weight: $font-weight-bold;
+      margin: 0;
+    }
+  }
+}
+
+.card-right-one {
+  background-image: url('../images/coffee-1.png');
+  object-fit: cover;
+}
+
+.card-left-two {
+  background-image: url('../images/coffee-2.png');
+  object-fit: cover;
+}
+
+.card-right-three {
+  background-image: url('../images/coffee-3.png');
+}
+
 @keyframes bounce {
   0%,
   100% {
