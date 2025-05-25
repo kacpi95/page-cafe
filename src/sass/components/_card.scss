@@ -1,0 +1,100 @@
+.card-products {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  .card-single-product {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+
+    .card-section {
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: $font-source;
+      color: $color-dark;
+    }
+
+    .card-left-one,
+    .card-right-two {
+      order: 1;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .card-right-one,
+    .card-left-two {
+      order: 2;
+      flex: 1;
+      max-width: 400px;
+      min-height: 310px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h3 {
+      font-weight: $font-weight-black;
+      font-size: 24px;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .desc {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .line {
+      width: 150px;
+      height: 2px;
+      background-color: $color-main;
+      margin-top: 8px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.4;
+      color: rgb(82, 82, 82);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+}
+
+.taste-caffe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  align-items: flex-start;
+
+  div {
+    display: flex;
+    gap: 10px;
+    max-width: 200px;
+
+    p:first-child {
+      color: $color-dark;
+      opacity: 0.7;
+      font-weight: $font-weight-black;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    p:last-child {
+      color: $color-main;
+      font-weight: $font-weight-bold;
+      margin: 0;
+    }
+  }
+}

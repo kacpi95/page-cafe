@@ -1,0 +1,51 @@
+nav {
+  background-color: $color-dark;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .section-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-left {
+    color: $color-light;
+
+    h4 {
+      font-size: 18px;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+      font-family: $font-source;
+      font-weight: $font-weight-black;
+    }
+
+    p {
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-family: $font-source;
+      font-weight: $font-weight-semibold;
+    }
+  }
+
+  .section-right {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: gray;
+      text-decoration: none;
+      font-family: $font-source;
+      font-weight: $font-weight-semibold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+  }
+}

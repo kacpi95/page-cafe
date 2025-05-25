@@ -1,0 +1,29 @@
+.section-products {
+  padding: 80px 20px;
+  background-color: $color-light;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-family: $font-source;
+      font-size: 48px;
+      color: $color-main;
+      position: relative;
+      margin-bottom: 40px;
+      letter-spacing: 10px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 400px;
+        height: 4px;
+        background-color: $color-main;
+        margin: 12px auto 0;
+        border-radius: 2px;
+      }
+    }
+  }
+}
