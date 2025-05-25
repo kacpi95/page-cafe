@@ -81,37 +81,26 @@
   }
 
   .card-products {
-    display: flex;
-    flex-direction: column;
     gap: 40px;
 
     .card-single-product {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0px;
+      flex-direction: column;
+      align-items: flex-start;
 
       .card-section {
-        order: 0 !important;
+        margin: 0 auto;
+        width: 100%;
         padding: 10px 0;
-        width: 100%;
+        order: 0 !important;
       }
 
-      .card-right-one,
       .card-left-two,
+      .card-right-one,
+      .card-right-two,
       .card-right-three {
+        order: 2 !important;
+        width: 100%;
         min-height: 200px;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-      }
-
-      .card-left-two,
-      .card-right-one,
-      .card-right-three {
-        order: 1 !important;
-        width: 100%;
-        min-height: 250px;
         background-position: center;
         background-size: cover;
       }
@@ -119,26 +108,36 @@
       h3 {
         font-size: 20px;
         margin-bottom: 8px;
+        text-align: center;
       }
 
-      .description {
-        font-size: 14px;
-        margin-left: 20px;
-      }
+      .desc {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
 
-      .line {
-        width: 100px;
-        height: 2px;
+        .line {
+          width: 100px;
+          margin: 0 auto;
+        }
+
+        .description {
+          font-size: 14px;
+          text-align: center;
+          margin-left: 0;
+        }
       }
     }
   }
 
   .taste-caffe {
+    align-items: center;
     font-size: 12px;
     gap: 15px;
 
     div {
       max-width: 150px;
+      justify-content: center;
 
       p:first-child {
         font-size: 12px;
@@ -148,6 +147,33 @@
         font-size: 12px;
       }
     }
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: $color-dark;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    width: 150px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: $color-light;
+    font-size: 16px;
   }
 }
 
