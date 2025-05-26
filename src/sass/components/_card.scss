@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .card-products {
   display: flex;
   flex-direction: column;
@@ -86,34 +88,35 @@
       margin-bottom: 20px;
       text-align: left;
     }
-    .taste-caffe {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      font-size: 14px;
-      text-transform: uppercase;
-      align-items: flex-start;
+  }
+}
 
-      div {
-        display: flex;
-        gap: 10px;
-        max-width: 200px;
+.taste-caffe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  align-items: flex-start;
 
-        p:first-child {
-          color: $color-dark;
-          opacity: 0.8;
-          font-weight: $font-weight-black;
-          white-space: nowrap;
-          flex-shrink: 0;
-          margin: 0;
-        }
+  div {
+    display: flex;
+    gap: 10px;
+    max-width: 200px;
 
-        p:last-child {
-          color: $color-main;
-          font-weight: $font-weight-bold;
-          margin: 0;
-        }
-      }
+    p:first-child {
+      color: $color-dark;
+      opacity: 0.8;
+      font-weight: $font-weight-black;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    p:last-child {
+      color: $color-main;
+      font-weight: $font-weight-bold;
+      margin: 0;
     }
   }
 }
